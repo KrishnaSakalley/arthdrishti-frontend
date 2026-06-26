@@ -1,4 +1,4 @@
-const BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:8000";
+const API_BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:8000";
 
 async function postJSON(endpoint, payload) {
   const res = await fetch(`${API_BASE_URL}${endpoint}`, {
